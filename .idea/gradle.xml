@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/common" />
             <option value="$PROJECT_DIR$/commonwidget" />
             <option value="$PROJECT_DIR$/panowidget" />
+            <option value="$PROJECT_DIR$/user" />
             <option value="$PROJECT_DIR$/video" />
             <option value="$PROJECT_DIR$/videowidget" />
           </set>

@@ -76,14 +76,12 @@ public class MainActivity extends AppCompatActivity {
         //暂停渲染和显示
         mVideo.pauseRendering();
     }
-
     @Override
     protected void onResume() {
         super.onResume();
         //继续渲染和显示
         mVideo.resumeRendering();
     }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -96,8 +94,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     class myVideoListener extends VrVideoEventListener{
+        //定义boolean来进行判断是否点击
         boolean isPlay = true;
-        //监听
+        //监听如果是true进行暂停,false进行播放
         @Override
         public void onClick() {
             super.onClick();
