@@ -31,18 +31,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void login(View view) {
+        //获取EditText
         String user = mUser.getText().toString().trim();
         String pass = mUser.getText().toString().trim();
+        //判断用户名和密码和EditText不能为空
         if (user.equals(pass)&& !TextUtils.isEmpty(user)){
+            //显示Progress
             mProgress.setVisibility(View.VISIBLE);
+            //3秒延迟操作
             handler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     mProgress.setVisibility(View.GONE);
-                    Toast.makeText(MainActivity.this, "保持了一直成功", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "成功", Toast.LENGTH_SHORT).show();
                 }
             },3000);
-
         }else {
             Toast.makeText(this, "错误", Toast.LENGTH_SHORT).show();
         }
