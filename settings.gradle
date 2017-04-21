@@ -1,1 +1,1 @@
-include ':app', ':common', ':commonwidget', ':panowidget', ':video', ':videowidget', ':user', ':mvcUser', ':mvpUser', ':mvcNullInterface'
+include ':app', ':common', ':commonwidget', ':panowidget', ':video', ':videowidget', ':user', ':mvcUser', ':mvpUser', ':mvcNullInterface', ':mvvmUser'
